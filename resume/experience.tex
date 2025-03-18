@@ -1,0 +1,155 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Experience}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+    \cventry
+    {
+        Software Engineer $~\mid~$
+        Distributed Systems, High Load,
+        Linux, C++, Python
+    } % Job title
+    {Yandex} % Organization
+    {Saint-Petersburg, Russia} % Location
+    {Jan 2024 - Now} % Date(s)
+    {
+        \begin{cvitems}
+          \item {
+              Participated in development and support of a core infrastructure pub/sub service
+              (\approx 20 million RPS).
+          }
+          \item {
+              Developed an SNS compatible API as a part of public service API. Ensured compatibility
+              with existing SDKs.
+          }
+          \item {
+              Designed and implemented SMS and WebPush notification channels support with SNS-compatible API.
+          }
+          \item {
+              Conducted a resource consumption review and performed a horizontal scaling of the main
+              stateful component.
+          }
+          \item {
+              Drove \underline{\href{https://www.boost.org/doc/libs/1_87_0/doc/html/boost_asio.html}{Boost.Asio}}
+              upgrade (from 1.74 to 1.86), which required rewriting a lot of low-level ASIO code
+              repository-wise.
+          }
+          \item {
+              Set up code linting and formatting CI checks to ensure high code quality.
+              Helped my team to set up LSP in their coding environment.
+          }
+        \end{cvitems}
+    }
+
+    \cventry
+    {
+        Senior Software Engineer $~\mid~$
+        Embedded Systems, Storage Systems,
+        Linux, C++, C, Python
+    } % Job title
+    {YADRO} % Organization
+    {Saint-Petersburg, Russia} % Location
+    {May 2023 - Jan 2024} % Date(s)
+    {
+        \begin{cvitems}
+          \item {
+            Implemented and deployed a write-ahead log used for crash and transaction
+            recovery in partial failure mode.
+          }
+        \end{cvitems}
+    }
+
+    \cventry
+    {
+        Software Engineer $~\mid~$
+        Distributed Systems, High Load
+        Linux, C++, CUDA, Python,
+        Inference, gRPC
+    } % Job title
+    {Yandex SDG} % Organization
+    {Saint-Petersburg, Russia} % Location
+    {Oct 2021 - May 2023} % Date(s)
+    {
+        \begin{cvitems}
+        \item {
+          Designed and implemented a remote inference service.
+          Much like \underline{\href{https://github.com/triton-inference-server/server}{Triton}}
+          but tailored exactly to our needs and technologies.
+        }
+        \item {
+          Increased mean GPU utilization by 6 times when compared to a separate
+          GPU per operation and by 4 times when compared to Triton.
+        }
+        \item {
+          This led to large savings in operational costs and helped developers verify and deploy their ideas faster.
+        }
+        \item {
+          Implemented a cluster autoscaler paired with service discovery
+          service suitable for multi-tenant and QoS-critical scenarios.
+        }
+        \item {
+          Ensured observability and debuggability of the service by ensuring
+          that monitorings, logs and alerts are in place and well-documented.
+        }
+        \end{cvitems}
+    }
+
+  %\cventry
+    %{
+        %Software Engineer $~\mid~$
+        %Research, HPC, Inference,
+        %C++, Python, Inference, ML/MLOps
+    %} % Job title
+    %{Huawei \& ITMO university} % Organization
+    %{Saint-Petersburg, Russia} % Location
+    %{May 2021 - Sept 2021} % Date(s)
+    %{
+      %\begin{cvitems}
+        %\item {
+            %Developed fast, small and concise C/C++ implementations of specific RNN ML algorithms.
+        %}
+        %\item {
+            %Built a compression tool on top of the models' implementations.
+        %}
+        %\item {
+            %The solution proved to be \underline{a highly competitive compression tool}
+            %in terms of both CR and resource consumption.
+        %}
+      %\end{cvitems}
+    %}
+
+
+  %\cventry
+    %{
+        %Software Engineer $~\mid~$
+        %Research, HPC, C, Python,
+        %Background Modelling,
+        %Compression, HEVC
+    %} % Job title
+    %{Huawei \& ITMO university} % Organization
+    %{Saint-Petersburg, Russia} % Location
+    %{Oct 2020 - Apr 2021} % Date(s)
+    %{
+      %\begin{cvitems} % Description(s) of tasks/responsibilities
+        %\item {
+            %Developed low latency and high throughput background extraction algorithms.
+        %}
+        %\item {
+            %Created a set of metrics to fine tune and compare these algorithms.
+        %}
+        %\item {
+            %Integrated the algorithms into HEVC and x265 encoders. The resulting encoder
+            %\underline{shows considerable growth in CR} while slightly compromising performance when
+            %compared to the original encoder.
+        %}
+      %\end{cvitems}
+    %}
+
+\end{cventries}
